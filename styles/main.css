@@ -25,11 +25,11 @@ header {
   padding: 20px;
 }
 
-.newQuoteBtn {
+#newQuoteBtn {
   margin-top: 20px;
 }
 
-.tweetBtn {
+#tweetBtn {
   grid-column: 3;
   margin: 20px 0px;
 }
