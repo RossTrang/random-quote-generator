@@ -4,13 +4,13 @@ const tweetBtn = document.getElementById("tweetBtn");
 
 quoteBtn.onclick = function() {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', "http://quotes.rest/qod.json");
+    xhr.open("GET", "https://ron-swanson-quotes.herokuapp.com/v2/quotes");
     xhr.onload = function() {
         if (xhr.status === 200) {
             var quoteInfo = JSON.parse(xhr.responseText);
-            theQuote.textContent = quoteInfo.contents.quotes[0].quote;
+            theQuote.textContent = quoteInfo;
         } else {
-            alert('Request failed.  Returned status of ' + xhr.status);
+            alert("Request failed.  Returned status of " + xhr.status);
         }
     };
     xhr.send();
