@@ -29,7 +29,7 @@ header {
   margin-top: 20px;
 }
 
-#tweetBtn {
+.twitter-share-button {
   grid-column: 3;
   margin: 20px 0px;
 }

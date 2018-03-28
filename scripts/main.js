@@ -1,23 +1,17 @@
 let theQuote = document.querySelector("q");
 const quoteBtn = document.getElementById("newQuoteBtn");
-const tweetBtn = document.getElementById("tweetBtn");
 
 quoteBtn.onclick = function() {
-    var xhr = new XMLHttpRequest();
+    const xhr = new XMLHttpRequest();
     xhr.open("GET", "https://ron-swanson-quotes.herokuapp.com/v2/quotes");
     xhr.onload = function() {
         if (xhr.status === 200) {
-            var quoteInfo = JSON.parse(xhr.responseText);
+            let quoteInfo = JSON.parse(xhr.responseText);
             theQuote.textContent = quoteInfo;
         } else {
             alert("Request failed.  Returned status of " + xhr.status);
         }
     };
     xhr.send();
-};
-
-tweetBtn.onclick = function () {
-    // body...
-    console.log("Tweet button pressed");
 };
 
