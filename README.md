@@ -12,7 +12,6 @@ The only freely public quote API I could find (that didn't have CORS issues) was
 for Ron Swanson quotes, so I've built a Ron-dom Quote Generator. FML!
 
 
-
 Grateful assistance provided by:
     _Ray Nicholus_      https://blog.garstasio.com/you-dont-need-jquery/ajax/
     _Shug Niggurath_    Friend, mentor, bevvy-merchant

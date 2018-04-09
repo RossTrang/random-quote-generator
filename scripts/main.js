@@ -1,7 +1,7 @@
 let theQuote = document.querySelector('q');
 var quoteInfo = '';
 const quoteBtn = document.getElementById('newQuoteBtn');
-const tweetBtn = document.getElementById('tweet')
+const tweetBtn = document.getElementById('tweet');
 
 function getQuote() {
   const xhr = new XMLHttpRequest();
@@ -20,10 +20,11 @@ function getQuote() {
 document.addEventListener('DOMContentLoaded', getQuote());
 
 quoteBtn.onclick = function () {
-  getQuote()
+  getQuote();
 };
 
 tweetBtn.onclick = function () {
-  this.setAttribute('href', 'https://twitter.com/intent/tweet?text=' + quoteInfo)
+  this.setAttribute('href', 'https://twitter.com/intent/tweet?text=' + quoteInfo +
+      ' ~ Ron Swanson');
 };
 
