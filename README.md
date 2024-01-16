@@ -9,9 +9,9 @@ I've set myself the goal of using no frameworks. CSS Grid will be used in place 
 Bootstrap and the native JavaScript WebAPI will carry out the JQuery/Ajax functions.
 
 The only freely public quote API I could find (that didn't have CORS issues) was
-for Ron Swanson quotes, so I've built a Ron-dom Quote Generator. FML!
+for Ron Swanson quotes, so I've built a Ron-dom Quote Generator.
 
 
 Grateful assistance provided by:
     _Ray Nicholus_      https://blog.garstasio.com/you-dont-need-jquery/ajax/
-    _Shug Niggurath_    Friend, mentor, bevvy-merchant
+    _Shug Niggurath_    Friend & mentor
